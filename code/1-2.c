@@ -17,7 +17,7 @@ int main() {
     s.ihl = 5;
     s.ttl = 256;
     s.protocol = 17;
-    sprintf((char*)s.data, "hello world");
+    sprintf(s.data, "hello world");
 
     printf("version: %u, size: %zu\n", s.version, sizeof(s.version));
     printf("ihl: %u, size: %zu\n", s.ihl, sizeof(s.ihl));
